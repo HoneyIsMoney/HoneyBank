@@ -1,0 +1,4 @@
+# pack-refs with: peeled fully-peeled sorted 
+eadaf066f2cac80767699d3cae1391776d4eba47 refs/heads/178-add-uniswap-adapters
+750920303e33b66bc29862ea3b85206dda9ce786 refs/heads/ice/mainnet-deployment-03-12-2020
+eea6d38f243b909fc3cf82a581c45b8bc3d2390e refs/heads/master
