@@ -1,14 +1,14 @@
 ```
-        .///.                .///.     //.            .//  `/////////////- 
-       `++:++`              .++:++`    :++`          `++:  `++:......---.` 
-      `/+: -+/`            `++- :+/`    /+/         `/+/   `++.            
-      /+/   :+/            /+:   /+/    `/+/        /+/`   `++.            
-  -::/++::`  /+:       -::/++::` `/+:    `++:      :++`    `++/:::::::::.  
-  -:+++::-`  `/+:      --++/---`  `++-    .++-    -++.     `++/:::::::::.  
-   -++.       .++-      -++`       .++.    .++.  .++-      `++.            
-  .++-         -++.    .++.         -++.    -++``++-       `++.            
- `++:           :++`  .++-           :++`    :+//+:        `++:----------` 
- -/:             :/-  -/:             :/.     ://:         `/////////////- 
+        .///.                .///.     //.            .//  `/////////////-
+       `++:++`              .++:++`    :++`          `++:  `++:......---.`
+      `/+: -+/`            `++- :+/`    /+/         `/+/   `++.
+      /+/   :+/            /+:   /+/    `/+/        /+/`   `++.
+  -::/++::`  /+:       -::/++::` `/+:    `++:      :++`    `++/:::::::::.
+  -:+++::-`  `/+:      --++/---`  `++-    .++-    -++.     `++/:::::::::.
+   -++.       .++-      -++`       .++.    .++.  .++-      `++.
+  .++-         -++.    .++.         -++.    -++``++-       `++.
+ `++:           :++`  .++-           :++`    :+//+:        `++:----------`
+ -/:             :/-  -/:             :/.     ://:         `/////////////-
 ```
 
 # Aave Protocol v2
@@ -50,19 +50,19 @@ Follow the next steps to setup the repository:
 
 ```
 # Mnemonic, only first address will be used
-MNEMONIC=""
+MNEMONIC="trend change swap liberty orange timber mirror dose upset pencil hurry ghost"
 
 # Add Alchemy or Infura provider keys, alchemy takes preference at the config level
-ALCHEMY_KEY=""
-INFURA_KEY=""
+ALCHEMY_KEY="Qfb9D6Q-oIGzNNdNIlOHSyHYawKKT7FS"
+INFURA_KEY="5d99b4df68564865ab9814ee77f03b90"
 
 
 # Optional Etherscan key, for automatize the verification of the contracts at Etherscan
-ETHERSCAN_KEY=""
+ETHERSCAN_KEY="H2HP274NB9M9STTKBWT8FDV65RSBMRI5KI"
 
 # Optional, if you plan to use Tenderly scripts
-TENDERLY_PROJECT=""
-TENDERLY_USERNAME=""
+TENDERLY_PROJECT="svpply"
+TENDERLY_USERNAME="svpply"
 
 ```
 
