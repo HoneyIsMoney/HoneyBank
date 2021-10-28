@@ -1,12 +1,12 @@
-import {task} from '@nomiclabs/buidler/config';
+import { task } from '@nomiclabs/buidler/config';
 
-import {UiPoolDataProviderFactory} from '../../types';
-import {verifyContract} from '../../helpers/etherscan-verification';
-import {eContractid} from '../../helpers/types';
+import { UiPoolDataProviderFactory } from '../../types';
+import { verifyContract } from '../../helpers/etherscan-verification';
+import { eContractid } from '../../helpers/types';
 
 task(`deploy-${eContractid.UiPoolDataProvider}`, `Deploys the UiPoolDataProvider contract`)
   .addFlag('verify', 'Verify UiPoolDataProvider contract via Etherscan API.')
-  .setAction(async ({verify}, localBRE) => {
+  .setAction(async ({ verify }, localBRE) => {
     await localBRE.run('set-bre');
 
     if (!localBRE.network.config.chainId) {

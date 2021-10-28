@@ -26,7 +26,12 @@ import {
 import { Signer } from 'ethers';
 import { TokenContractId, eContractid, tEthereumAddress, AavePools } from '../helpers/types';
 import { MintableERC20 } from '../types/MintableERC20';
-import { ConfigNames, getReservesConfigByPool, getTreasuryAddress, loadPoolConfig } from '../helpers/configuration';
+import {
+  ConfigNames,
+  getReservesConfigByPool,
+  getTreasuryAddress,
+  loadPoolConfig,
+} from '../helpers/configuration';
 import { initializeMakeSuite } from './helpers/make-suite';
 
 import {
@@ -35,10 +40,7 @@ import {
   setInitialMarketRatesInRatesOracleByHelper,
 } from '../helpers/oracles-helpers';
 import { DRE, waitForTx } from '../helpers/misc-utils';
-import {
-  initReservesByHelper,
-  configureReservesByHelper,
-} from '../helpers/init-helpers';
+import { initReservesByHelper, configureReservesByHelper } from '../helpers/init-helpers';
 import AaveConfig from '../markets/aave';
 import { ZERO_ADDRESS } from '../helpers/constants';
 import {
@@ -213,13 +215,15 @@ const buildTestEnv = async (deployer: Signer, secondaryWallet: Signer) => {
 
   const treasuryAddress = await getTreasuryAddress(config);
 
-  await initReservesByHelper(reservesParams, allReservesAddresses, admin, treasuryAddress, ZERO_ADDRESS, false);
-  await configureReservesByHelper(
+  await initReservesByHelper(
     reservesParams,
     allReservesAddresses,
-    testHelpers,
-    admin
+    admin,
+    treasuryAddress,
+    ZERO_ADDRESS,
+    false
   );
+  await configureReservesByHelper(reservesParams, allReservesAddresses, testHelpers, admin);
 
   const collateralManager = await deployLendingPoolCollateralManager();
   await waitForTx(
